@@ -2,7 +2,7 @@ node ('master')
 {
    stage('init')
    {
-      echo "runing job"
+      echo "runing job from branch ${BRANCH_NAME}"
       checkout scm
    }
    
