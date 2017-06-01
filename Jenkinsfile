@@ -8,6 +8,7 @@ node ('master')
    
    stage('run')
    {
-      bat 'run.bat'
+      def result = build 'downStreamJob'
+      echo "${result}"
    }
 }
